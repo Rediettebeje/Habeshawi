@@ -53,7 +53,7 @@ body {
 
 .hero-section {
   height: 30vh;
-  background: url("./images/coffee.jpg") no-repeat center center/cover;
+  background: url("../images/coffee.jpg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,5 +164,111 @@ p {
   .navbar-nav .nav-link {
     padding: 0.7rem;
     font-size: 1.1rem;
+  }
+}
+/* Menu Section */
+.menu-section {
+  padding: 2rem 1rem;
+  background-color: white;
+}
+
+.menu-section h1,
+.menu-section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: header;
+}
+
+.menu-section p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-family: p;
+}
+
+.menu-items,
+.specials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu-item,
+.special-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+}
+
+.menu-item img,
+.special-item img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-content,
+.special-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-content h3,
+.special-content h3 {
+  font-size: 1.5rem;
+  color: #2d6260;
+  font-family: header;
+}
+
+.menu-content p,
+.special-content p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: p;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #d9534f;
+}
+
+/* Menu Item Image */
+.menu-item img,
+.special-item img {
+  width: 100%;
+  /* Make the image fill the container width */
+  max-width: 400px;
+  /* Set a fixed width for all images (adjust as needed) */
+  height: 200px;
+  /* Maintain the aspect ratio of the images */
+  object-fit: cover;
+  /* Ensure the image covers the area without distortion */
+  /* border-radius: 10px; */
+  /* Optional: Rounded corners for a nice look */
+}
+
+/* Mobile First */
+@media only screen and (min-width: 768px) {
+    .menu-section h2 {
+        text-align: center;
+        /* This makes sure "Main Dishes" is centered */
+      }
+  .menu-items,
+  .specials {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .menu-item,
+  .special-item {
+    flex: 1 1 45%;
+    /* Adjust width for desktop view */
   }
 }
