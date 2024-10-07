@@ -41,29 +41,32 @@
         </div>
     </nav>
 
+<section class="wrapper">
     <!-- Hero Section -->
-    <header class="hero-section text-white d-flex justify-content-center align-items-center">
-        <div class="hero-content text-center">
-            <h1>Welcome to Our Restaurant</h1>
-            <!-- <p>Experience the best Ethiopian cuisine</p> -->
-            <!-- <a href="#menu" class="btn btn-primary">Order Now</a> -->
+   
+  
+<section class="about-section">
+    <h1>About Us</h1>
+    <div class="about-content">
+        <img src="../images/coffee.jpg" alt="Restaurant Image" class="about-image">
+        <div class="about-text">
+            <p>Welcome to our Ethiopian restaurant, where we celebrate the rich culture and flavors of Ethiopia. Our
+                mission is to provide a memorable dining experience through authentic dishes and exceptional service.
+            </p>
+            <p>Founded in [Year], our restaurant was born out of a passion for sharing the traditional Ethiopian cuisine
+                with our community. Our chefs bring years of experience and family recipes passed down through
+                generations.</p>
         </div>
-    </header>
+    </div>
+</section>
 
-    <!-- Introduction -->
-    <section class="introduction">
-        <div class="container">
-            <h2>Experience the best Ethiopian cuisine</h2>
-            <p>We offer a wide selection of traditional Ethiopian dishes made from the finest ingredients. Whether
-                you're craving injera or tibs, we have something for everyone.</p>
-        </div>
-    </section>
+ 
     <!-- Menu Section -->
     <section class="menu-section">
         <h1>Our Menu</h1>
         <p>Discover our authentic Ethiopian dishes, made with the freshest ingredients and traditional spices.</p>
     
-         Special Dishes
+         <!-- Special Dishes -->
         <div class="specials">
             <h2>Today's Specials</h2>
             <div class="special-item">
@@ -74,23 +77,32 @@
                     <span class="price">$12.99</span>
                 </div>
             </div> 
-            <!-- Add more special items as needed -->
+         
         </div>
         <div class="menu-section">
-            <h2>Main Dishes</h2> 
+            <!-- <h2>Main Dishes</h2>  -->
             <div class="menu-items">
                 <div class="menu-item">
-                    <img src="../images/sanbusa.jpg" alt="Dish 1">
+                    <img src="../images/tebes .jpg" alt="Dish 1">
                     <div class="menu-content">
-                        <h3>Injera Firfir</h3>
-                        <p>A savory dish made from shredded injera mixed with spiced butter and berbere sauce.</p>
-                        <span class="price">$9.99</span>
+                        <h3>Tebes</h3>
+                        <p>Flavorful Ethiopian dish made with sautéed pieces of beef or lamb.</p>
+                        <span class="price">$19.99</span>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <img src="../images/shero.jpg" alt="Dish 2">
+                    <img src="../images/4.jpg" alt="Dish 2">
                     <div class="menu-content">
-                        <h3>Kitfo</h3>
+                        <h3>Special</h3>
+                        <p>Ground beef seasoned with mitmita (Ethiopian chili powder) and spiced butter, served raw or cooked.
+                        </p>
+                        <span class="price">$14.99</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/6.jpg" alt="Dish 2">
+                    <div class="menu-content">
+                        <h3>Alecha ferfer</h3>
                         <p>Ground beef seasoned with mitmita (Ethiopian chili powder) and spiced butter, served raw or cooked.
                         </p>
                         <span class="price">$14.99</span>
@@ -99,34 +111,25 @@
                 <div class="menu-item">
                     <img src="../images/shero.jpg" alt="Dish 2">
                     <div class="menu-content">
-                        <h3>Kitfo</h3>
+                        <h3>Shero</h3>
                         <p>Ground beef seasoned with mitmita (Ethiopian chili powder) and spiced butter, served raw or cooked.
                         </p>
-                        <span class="price">$14.99</span>
+                        <span class="price">$10.99</span>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <img src="../images/shero.jpg" alt="Dish 2">
+                    <img src="../images/7.jpg" alt="Dish 2">
                     <div class="menu-content">
-                        <h3>Kitfo</h3>
+                        <h3>Doro wet</h3>
                         <p>Ground beef seasoned with mitmita (Ethiopian chili powder) and spiced butter, served raw or cooked.
                         </p>
-                        <span class="price">$14.99</span>
+                        <span class="price">$24.99</span>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <img src="../images/shero.jpg" alt="Dish 2">
+                    <img src="../images/beyeayent.jpeg" alt="Dish 2">
                     <div class="menu-content">
-                        <h3>Kitfo</h3>
-                        <p>Ground beef seasoned with mitmita (Ethiopian chili powder) and spiced butter, served raw or cooked.
-                        </p>
-                        <span class="price">$14.99</span>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="../images/shero.jpg" alt="Dish 2">
-                    <div class="menu-content">
-                        <h3>Kitfo</h3>
+                        <h3>Beyeayent</h3>
                         <p>Ground beef seasoned with mitmita (Ethiopian chili powder) and spiced butter, served raw or cooked.
                         </p>
                         <span class="price">$14.99</span>
@@ -134,14 +137,45 @@
                 </div>
                 <!-- Add more menu items as needed -->
             </div>
-        </div>
-    
-    
-    
-       
+        </div>  
     </section>
-
-
+    <!-- Reservations Section -->
+    <section class="reservations-section">
+        <h1>Make a Reservation</h1>
+        <p>Reserve a table with us for an unforgettable dining experience.</p>
+    
+        <!-- Reservation Form -->
+        <form class="reservation-form" action="submit_reservation.php" method="POST">
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" name="date" required>
+    
+            <label for="time">Reservation Time:</label>
+            <input type="time" id="time" name="time" required>
+    
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="20" required>
+    
+            <button type="submit">Reserve Now</button>
+        </form>
+    
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Ethiopian Restaurant St., Austin, USA</p>
+        </div>
+    </section>
+    </section>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
