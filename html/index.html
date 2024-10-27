@@ -7,6 +7,11 @@
     <title>Habeshawi Restaurant</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
+   
+  
+ 
+
+
 </head>
 
 <body>
@@ -59,7 +64,31 @@
         </div>
     </div>
 </section>
-
+   <section class="gallery-section">
+        <h2>Our Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Gallery Items -->
+            <div class="gallery-item">
+                <img src="../images/3.jpg" alt="Delicious Dish 1">
+            </div>
+            <div class="gallery-item">
+                <img src="../images/4.jpg" alt="Delicious Dish 2">
+            </div>
+            <div class="gallery-item">
+                <img src="../images/6.jpg" alt="Beautiful Interior">
+            </div>
+            <div class="gallery-item">
+                <img src="../images/7.jpg" alt="Happy Customers">
+            </div>
+            <!-- Add more images as needed -->
+        </div>
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <img id="modalImage" src="" alt="Modal Image">
+            </div>
+        </div>
+    </section>
  
     <!-- Menu Section -->
     <section class="menu-section">
@@ -67,7 +96,7 @@
         <p>Discover our authentic Ethiopian dishes, made with the freshest ingredients and traditional spices.</p>
     
          <!-- Special Dishes -->
-        <div class="specials">
+        <!-- <div class="specials">
             <h2>Today's Specials</h2>
             <div class="special-item">
                 <img src="../images/dorowet.jpeg" alt="Special Dish 1">
@@ -78,7 +107,7 @@
                 </div>
             </div> 
          
-        </div>
+        </div> -->
         <div class="menu-section">
             <!-- <h2>Main Dishes</h2>  -->
             <div class="menu-items">
@@ -176,9 +205,12 @@
         </div>
     </section>
     </section>
+ 
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../main.js"></script>
 </body>
 
 </html>
