@@ -171,7 +171,7 @@ p {
 /* Modal styling */
 .modal {
   display: none;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -497,5 +497,14 @@ font-family: header;
   .about-text P{
     font-size: 1.2rem;
   }
+
+     .reservation-form {
+  
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       column-gap: 20px;
+       row-gap: 20px;
+       align-items: center;
+     }
 }
 
