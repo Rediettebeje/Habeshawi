@@ -508,3 +508,31 @@ font-family: header;
      }
 }
 
+#search-input {
+  padding: 8px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex-basis: 100%;
+  /* Full width on small screens */
+  flex-grow: 1;
+  max-width: 200px;
+  /* Optional to limit size */
+  box-sizing: border-box;
+}
+
+#search-btn {
+  padding: 8px 15px;
+  background-color: #6ea8d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: p;
+}
+
+#search-btn:hover {
+  background-color: #5d98c3;
+}
