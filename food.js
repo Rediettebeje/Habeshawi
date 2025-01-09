@@ -1,3 +1,4 @@
+const foods = `
 [
   {
     "name": "Doro Wot",
@@ -84,3 +85,6 @@
     "servingSize": "4-6 people"
   }
 ]
+`
+
+export default foods;
